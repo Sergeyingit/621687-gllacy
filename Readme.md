@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Sergey Razgildeev](https://up.htmlacademy.ru/htmlcss/22/user/621687).
-* Наставник: `Неизвестно`.
+* Наставник: [Елена Забара](https://htmlacademy.ru/profile/lena___elena).
 
 ---
 
