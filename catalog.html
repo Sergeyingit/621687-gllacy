@@ -36,7 +36,76 @@
         </ul>
         <h1 class="page-title">Сливочное мороженое</h1>
         <section class="filter">
-            <!--form-->
+            <!--Посмотри на фильтры. я тут наверняка накосячил. чекбоксы и радиокнопки группировал как в барбершопе, а сортировку и ползунок написал вот так. вопрос как потом стилизовать все подписи. всем разным тегам задавать ещё класс подписей? лейблам, р и легенде?-->
+            <h2 class="visually-hidden">Фильтр товаров</h2>
+          <form action="https://echo.htmlacademy.ru" method="get">
+            <label for="sorting">Сортировка:</label>
+            <select name="sorting" id="sorting">
+                <option value="sorting-popular">по популярности</option>
+                <option value="sorting-inexpensive">сначала недорогие</option>
+                <option value="sorting-expensive">сначала дорогие</option>
+                <option value="sorting-fat">по жирности</option>
+            </select>
+            <select class="range">
+            <p>Цена: 100 руб. - 500 руб.</p>
+            <div class="range-out">
+                <span class="range-in"></span>
+                <button class="range-circle-min"></button>
+                <button class="range-circle-max"></button>
+            </div>
+            </select>
+            <fieldset>
+                <legend></legend>
+                <ul>
+                    <li class="filter-option">
+                        <input class="visually-hidden filter-radio" type="radio" name="fat" id="fat-0" value="fat-0">
+                        <label for="fat-0">0%</label>
+
+                    </li>
+                    <li class="filter-option">
+                        <input class="visually-hidden filter-radio" type="radio" name="fat" id="fat-10" value="fat-10" checked>
+                        <label for="fat-10">до 10%</label>
+
+                    </li>
+                    <li class="filter-option">
+                        <input class="visually-hidden filter-radio" type="radio" name="fat" id="fat-30" value="fat-30">
+                        <label for="fat-30">до 30%</label>
+
+                    </li>
+                    <li class="filter-option">
+                        <input class="visually-hidden filter-radio" type="radio" name="fat" id="fat-over-30" value="fat-over-30">
+                        <label for="fat-over-30">выше 30%</label>
+                    </li> 
+                </ul> 
+            </fieldset>
+            <fieldset>
+                <legend>Наполнители:</legend>
+                <ul>
+                    <li class="filter-option">
+                        <input class="visually-hidden filter-checkbox" type="checkbox" name="chocolate" id="chocolate" checked>
+                        <label for="chocolate">шоколадные</label>
+                    </li>
+                    <li class="filter-option">
+                        <input class="visually-hidden filter-checkbox" type="checkbox" name="sugar" id="sugar" checked>
+                        <label for="sugar">сахарные присыпки</label>
+                    </li>
+                    <li class="filter-option">
+                        <input class="visually-hidden filter-checkbox" type="checkbox" name="fruit" id="fruit">
+                        <label for="fruit">фрукты</label>
+                    </li>
+                    <li class="filter-option">
+                        <input class="visually-hidden filter-checkbox" type="checkbox" name="syrup" id="syrup">
+                        <label for="syrup">сиропы</label>
+                    </li>
+                    <li class="filter-option">
+                        <input class="visually-hidden filter-checkbox" type="checkbox" name="jam" id="jam">
+                        <label for="jam">джемы</label>
+                    </li>
+                </ul>
+            </fieldset>
+            <button type="submit" class="filter-btn">Применить</button>
+
+          </form>
             
         </section>
         <section class="catalog">
@@ -140,5 +209,37 @@
         </div>
 
     </footer>
+    <!--форма поиска-->
+    <section class="modal modal-search">
+        <h2 class="visually-hidden">Поле поиска</h2>
+        <form action="https://echo.htmlacademy.ru" method="get">
+            <label class="visually-hidden" for="search">Ввод текста поиска</label>
+            <input type="text" name="text" id="search" placeholder="Что ищем?">
+        </form>
+        
+    </section>
+    <!--форма входа-->
+    <section class="modal modal-login">
+        <h2 class="visually-hidden">Личный кабинет</h2>
+        <p>Введите свою электронную почту и пароль</p>
+        <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+            <label class="visually-hidden" for="login">Электронная почта</label>
+            <input type="text" id="login" name="login" placeholder="Электронная почта">
+            <label class="visually-hidden" for="password">Пароль</label>
+            <input type="password" name="password" id="password" placeholder="Пароль">
+            <button class="button" type="submit">Войти</button>
+            <p><a class="link-modal" href="#">Забыли пароль?</a></p>
+            <p><a class="link-modal" href="#">Новая регистрация</a></p>
+        </form>
+        <button class="close-btn">Закрыть</button>
+    </section>
+    <section class="modal modal-basket">
+        <h2 class="visually-hidden"></h2>
+        <form action="https://echo.htmlacademy.ru" method="post">
+            <!--тут таблицей? и кнопка ли, прежде чем оформить заказ наверно ссылка ведёт в корзину где форма оплаты и т.д. что-то я уже туплю. -->
+            
+        </form>
+        
+    </section>
   </body>
 </html>
