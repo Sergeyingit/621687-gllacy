@@ -77,6 +77,7 @@ body {
 
 .modal-catalog {
 	list-style: none;
+	background-color: #f8f7f4;
 	
 
 }
@@ -109,11 +110,13 @@ body {
 .nav-item:nth-child(1){
     text-decoration: underline;
 }
-.modal-catalog .new {
-	font-size: 14px;
-	line-height: 16px;
+.modal-catalog .new,
+.modal-catalog .new:hover,
+.modal-catalog .new:focus,
+.modal-catalog .new:active {
+	
 	font-weight: 700;
-	color: #323232;
+	
 }
 
 
@@ -216,7 +219,7 @@ body {
 .slider {
 	text-align: center;
 }
-.slide {
+.slide .text-slide {
 	font-size: 60px;
 	line-height: 60px;
 	font-weight: 700;
@@ -496,6 +499,9 @@ body {
 	color: #fefefe;
 	
 }
+.back-communication {
+	background-color: #f8f7f4;
+}
 .back-communication p {
 	font-size: 24px;
 	line-height: 28px;
@@ -561,6 +567,7 @@ body {
 	font-weight: 400;
 	color: #ffffff;
 	
+
 
 }
 .breadcrumbs a:hover,
