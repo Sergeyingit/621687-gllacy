@@ -17,7 +17,7 @@
     	<nav class="main-nav">
     		
     		<ul class="site-nav">
-    			<li class="modal-window"><a>Каталог</a>
+    			<li class="modal-window"><a class="nav-item-active">Каталог</a>
                     <ul class="modal modal-catalog">
                         <li><a class="new" href="#">Новинки</a></li>
                         <li><a>Сливочное</a></li>
@@ -30,7 +30,7 @@
     			<li><a class="nav-item" href="#">О Компании</a></li>
     		</ul>
     		<ul class=btn-header>
-                <li class="modal-window"><a href="#"><span class="visually-hidden">Поиск</span></a>
+                <li class="modal-window"><a class="header-link" href="#"><span class="visually-hidden">Поиск</span></a>
                     <section class="modal modal-search">
                         <h2 class="visually-hidden">Поле поиска</h2>
                         <form action="https://echo.htmlacademy.ru" method="get">
@@ -40,7 +40,7 @@
         
                     </section>
                 </li>
-    			<li class="modal-window"><a href="#">Вход</a>
+    			<li class="modal-window"><a class="header-link" href="#">Вход</a>
                     <section class="modal modal-login">
                         <h2 class="visually-hidden">Личный кабинет</h2>
                         <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
@@ -55,13 +55,13 @@
         
                     </section>
                 </li>
-    			<li class="modal-window"><a href="#">2 товара</a>
+    			<li class="modal-window"><a class="header-link" href="#">2 товара</a>
                     <section class="modal modal-basket">
                         <h2 class="visually-hidden">Корзина</h2>
                         <form action="https://echo.htmlacademy.ru" method="post">
                             <table class="basket">
                                 <tr>
-                                    <td><button type="button" class="delete-btn">Удалить товар</button></td>
+                                    <td><button type="button" class="delete-btn visually-hidden">Удалить товар</button></td>
                                     <td><img src="img/catalog-1.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом"></td>
                                     <td><a href="#">Пломбир с апельсиновым джемом</a></td>
                                     <td>1,5 кг х <span>200 руб.</span></td>
@@ -69,7 +69,7 @@
                                     
                                 </tr>
                                 <tr>
-                                    <td><button type="button" class="delete-btn">Удалить товар</button></td>
+                                    <td><button type="button" class="delete-btn visually-hidden">Удалить товар</button></td>
                                     <td><img src="img/catalog-3.jpg" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада"></td>
                                     <td><a href="#">Клубничный пломбир с присыпкой из белого шоколада</a></td>
                                     <td>1,5 кг х <span>300 руб.</span></td>
@@ -105,7 +105,7 @@
             <h2 class="visually-hidden">Фильтр товаров</h2>
           <form action="https://echo.htmlacademy.ru" method="get">
             <label class="label-filter" for="sorting">Сортировка:</label>
-            <select name="sorting" id="sorting">
+            <select class="select-hover" name="sorting" id="sorting">
                 <option class="value-filter" value="sorting-popular">по популярности</option>
                 <option class="value-filter" value="sorting-inexpensive">сначала недорогие</option>
                 <option class="value-filter" value="sorting-expensive">сначала дорогие</option>
@@ -241,13 +241,13 @@
             
         </section>
         <ul class="pagination-list">
-            <li class="pagination-item pagination-item-back"><a><span class="visually-hidden">Назад</span></a></li>
-            <li class="pagination-item pagination-item-current"><a>1</a></li>
-            <li class="pagination-item"><a href="#">2</a></li>
-            <li class="pagination-item"><a href="#">3</a></li>
-            <li class="pagination-item"><a href="#">4</a></li>
-            <li class="pagination-item"><a href="#">5</a></li>
-            <li class="pagination-item"><a href="#"><span class="visually-hidden">Вперед</span></a></li>
+            <li><a class="pagination-item pagination-item-back"><span class="visually-hidden">Назад</span></a></li>
+            <li><a class="pagination-item pagination-item-current"><span>1</span></a></li>
+            <li><a class="pagination-item" href="#">2</a></li>
+            <li><a class="pagination-item" href="#">3</a></li>
+            <li><a class="pagination-item" href="#">4</a></li>
+            <li><a class="pagination-item" href="#">5</a></li>
+            <li><a class="pagination-item" href="#"><span class="visually-hidden">Вперед</span></a></li>
         </ul>
     </main>
     

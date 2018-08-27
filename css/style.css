@@ -22,13 +22,7 @@ body {
   overflow: hidden;
 }
 
-.site-nav {
-	font-size: 16px;
-	line-height: 18px;
-	font-weight: 700;
-	color: #ffffff;
-	background-color: #849d8f;
-}
+
 
 
 .btn-header  {
@@ -44,9 +38,12 @@ body {
 .btn-header {
 	list-style: none; 
 }
-.site-nav a,
-.btn-header a{
+.nav-item {
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: 700;
 	color: #ffffff;
+	background-color: #849d8f;
 }
 .nav-item:hover,
 .nav-item:focus {
@@ -64,6 +61,14 @@ body {
 	color: #323232;
 	background-color: #f7f6f3;
 	box-shadow: inset 0px 2px 1px 0px #696969; 
+
+}
+.nav-item-active {
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: 700;
+	color: #ffffff;
+	background-color: #d07058;
 
 }
 
@@ -118,10 +123,17 @@ body {
 	font-weight: 700;
 	
 }
+.header-link {
+	font-size: 14px;
+	line-height: 16px;
+	font-weight: 500;
+	color: #ffffff;
+	background-color: #9db1a5;
+	text-decoration: none;
+}
 
-
-.btn-header a:hover,
-.btn-header a:focus {
+.header-link:hover,
+.header-link:focus {
 	font-size: 14px;
 	line-height: 16px;
 	font-weight: 500;
@@ -522,7 +534,9 @@ body {
 .inner-page {
 	color: #ffffff;
 }
+.nav-item-active {
 
+}
 .modal-window .modal-basket {
 	display: none;
 }
@@ -539,6 +553,9 @@ body {
 	background-color: #f8f7f4;
 	
 
+}
+.basket span {
+color: #999999
 }
 .basket a {
 	font-size: 13px;
@@ -560,6 +577,10 @@ body {
 }
 .breadcrumbs {
 	list-style: none;
+	font-size: 14px;
+	line-height: 16px;
+	font-weight: 400;
+	color: #ffffff;
 }
 .breadcrumbs a {
 	font-size: 14px;
@@ -597,6 +618,12 @@ body {
 .filter ul {
 	list-style: none;
 }
+.select-hover {
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: 500;
+	color: #323232;
+}/**/
 .filter-btn {
 	font-size: 16px;
 	line-height: 18px;
@@ -625,15 +652,26 @@ body {
 .pagination-list {
 	list-style: none;
 }
-.pagination-item a {
+.pagination-item  {
 	font-size: 16px;
 	line-height: 18px;
 	font-weight: 500;
-	color: #eaeaea;
+	color: #ffffff;
 	text-decoration: none;
 }
+.pagination-item:hover,
+.pagination-item:focus {
+	background-color: #9db1a5;
+}
 .pagination-item:active {
+	color:  #323232;
+	background-color: #ffffff;
+}
+.pagination-item-current span {
 	font-size: 16px;
 	line-height: 18px;
-	font-weight: 
+	font-weight: 500;
+	color:  #323232;
+	background-color: #ffffff;
+
 }
