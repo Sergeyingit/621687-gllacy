@@ -699,15 +699,14 @@ color: #999999
 }
 .header-flex-container1 {
 	display: flex;
-	flex-direction: column;
 	padding-top: 9px;
 }
-.header-flex-container2 {
+/*.header-flex-container2 {
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-start;
 	
-}
+}*/
 .main-nav {
 	display: flex;
 	justify-content: space-between;
