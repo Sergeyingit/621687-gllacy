@@ -796,10 +796,19 @@ color: #999999
 	flex-direction: column;
 }
 
+
+.position-container {
+	position: relative;
+	width: 1200px;
+	margin: 0 auto;
+}
 .contacts {
 	display: flex;
 	flex-direction: column;
 	width: 302px;
+	position: absolute;
+	right: 27px;
+	bottom: 62px;
 }
 .main-footer {
 
@@ -843,13 +852,4 @@ color: #999999
 	margin-top: 48px;
 }
 
-.position-container {
-	position: relative;
-	width: 1200px;
-	margin: 0 auto;
-}
-.contacts {
-	position: absolute;
-	right: 27px;
-	bottom: 62px;
-}
+
