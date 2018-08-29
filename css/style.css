@@ -697,16 +697,11 @@ color: #999999
 .main-header {
 	margin-bottom: 13px;
 }
-.header-flex-container1 {
+.header-flex-container {
 	display: flex;
 	padding-top: 9px;
 }
-/*.header-flex-container2 {
-	display: flex;
-	justify-content: space-between;
-	align-items: flex-start;
-	
-}*/
+
 .main-nav {
 	display: flex;
 	justify-content: space-between;
@@ -714,6 +709,9 @@ color: #999999
 }
 .time-phone {
 	margin-left: auto;
+	width: 241px;
+	
+
 }
 .logo {
 	width: 154px;
@@ -752,13 +750,14 @@ color: #999999
 .catalog ul {
 	padding: 0;
 	margin: 0;
-}
-.catalog {
 	display: flex;
 	justify-content: space-between;
+	flex-wrap: wrap;
 	margin-bottom: 40px;
-
+	
 }
+
+
 .catalog-item {
 	width: 267px;
 	display: flex;
@@ -833,7 +832,7 @@ color: #999999
 }
 
 .filter {
-	/*width: 861px;*/
+	width: 861px;
 	display: flex;
 	flex-direction: column;
 	margin-bottom: 40px;
@@ -842,4 +841,15 @@ color: #999999
 
 .inner-page .main-footer {
 	margin-top: 48px;
+}
+
+.position-container {
+	position: relative;
+	width: 1200px;
+	margin: 0 auto;
+}
+.contacts {
+	position: absolute;
+	right: 27px;
+	bottom: 62px;
 }
