@@ -8,6 +8,10 @@
     <link rel="stylesheet"  href="css/style.css">
   </head>
   <body>
+  	<input class="visually-hidden" type="radio" id="product-1" name="toggle">
+  	<input class="visually-hidden" type="radio" id="product-2" name="toggle">
+  	<input class="visually-hidden" type="radio" id="product-3" name="toggle">
+  	<div class="site-wrapper">
 
     <!--<p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Профессиональный HTML и CSS, уровень 1</a>».</p>-->
     <header class="main-header container">
@@ -32,7 +36,7 @@
     		    </ul>
     		
     		    <ul class=btn-header>
-    			    <li class="modal-window"><a class="header-link" href="#"><span class="visually-hidden">Поиск</span></a>
+    			    <li class="modal-window"><a class="header-link icon-search" href="#"><span class="visually-hidden">Поиск</span></a>
     					<section class="modal modal-search">
     	               	    <h2 class="visually-hidden">Поле поиска</h2>
     	                	<form action="https://echo.htmlacademy.ru" method="get">
@@ -42,7 +46,7 @@
     	
                     	</section>
     				</li>
-    			    <li class="modal-window"><a class="header-link" href="#">Вход</a>
+    			    <li class="modal-window"><a class="header-link icon-login" href="#">Вход</a>
                         <section class="modal modal-login">
     	                    <h2 class="visually-hidden">Личный кабинет</h2>
     	                
@@ -57,7 +61,7 @@
     	                    </form>
                         </section>
     			    </li>
-    			    <li><a class="header-link" href="#">Пусто</a></li>
+    			    <li><a class="header-link icon-basket" href="#">Пусто</a></li>
     		    </ul>
   
     	    </nav>
@@ -72,15 +76,26 @@
     <main class="main-container">
       <div class="container">
     	<div class="slider">
-    		<div class="slide">
-    		    <h2 class="text-slide">Крем-брюле и пломбир с малиновым джемом</h2>
-    		    <a href="#" class="btn">Давайте оба!</a>
+    		<div class="slider-controls">
+    			<label for="product-1">Слайд 1</label>
+    			<label for="product-2">Слайд 2</label>
+    			<label for="product-3">Слайд 3</label>
     		</div>
-    		<div class="slide">
-    		</div>
-    		<div class="slide">
-    		</div>
-    	</div>
+    		<ul class="slider-list">
+    		    <li class="slide slider-item" id="slide1">
+    		        <h2 class="text-slide">Крем-брюле и пломбир с малиновым джемом</h2>
+    		        <a href="#" class="btn">Давайте оба!</a>
+    		    </li>
+    		    <li class="slide slider-item" id="slide2">
+    		        <h2 class="text-slide">Шоколадный пломбир и лимонный сорбет</h2>
+    		        <a href="#" class="btn">Давайте оба!</a>
+    		    </li>
+    		    <li class="slide slider-item" id="slide3">
+    		        <h2 class="text-slide">Пломбир с помадкой и клубничный щербет</h2>
+    		        <a href="#" class="btn">Давайте оба!</a>
+    		    </li>
+    	    </ul>
+        </div>
     	<div class="promo">
     		<div class="promo-berry">
     			<h2>Малинка даром!</h2>
@@ -99,24 +114,24 @@
     		<ul>
     		    <li class="catalog-item hit-item">
     			    <img src="img/catalog-1.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
-    			    <span class="price">310₽<span>/кг</span></span>
+    			    <span class="price">310<span>/кг</span></span>
     			
     		        <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
     			
     		    </li>
     		    <li class="catalog-item hit-item">
     			    <img src="img/catalog-2.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
-    			    <span class="price">380₽<span>/кг</span></span>
+    			    <span class="price">380<span>/кг</span></span>
     			    <a href="#">Сливочно-кофейное с кусочками шоколада</a>
     		    </li>
     		    <li class="catalog-item hit-item">
     			    <img src="img/catalog-3.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
-    			    <span class="price">355₽<span>/кг</span></span>
+    			    <span class="price">355<span>/кг</span></span>
     			    <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
     		    </li>
     		    <li class="catalog-item hit-item">
     			    <img src="img/catalog-4.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
-    			    <span class="price">415₽<span>/кг</span></span>
+    			    <span class="price">415<span>/кг</span></span>
     			    <a href="#">Сливочное крем-брюле с карамельной подливкой</a>
     		    </li>
     		</ul>
@@ -162,8 +177,9 @@
       </div>
 
         <div class="map-contacts">
-          
+           <div class="map">
     	    <img src="img/map.jpg" width="100%" height="430" alt="ул. Большая конюшенная 19/8, Санкт-Петербург">
+    	   </div>
     	  
     	  <div class="position-container">
     	    <div class="contacts">
@@ -190,10 +206,10 @@
     <footer class="main-footer container">
     	<div class="footer-social">
     		<ul>
-    		  <li><a href="#" class="social-btn"><span class="visually-hidden">Твиттер</span></a></li>
-    		  <li><a href="#" class="social-btn"><span class="visually-hidden">инстаграм</span></a></li>
-    		  <li><a href="#" class="social-btn"><span class="visually-hidden">Фейсбук</span></a></li>
-    		  <li><a href="#" class="social-btn"><span class="visually-hidden">Вконтакте</span></a></li>
+    		  <li><a href="#" class="social-btn twitter"><span class="visually-hidden">Твиттер</span></a></li>
+    		  <li><a href="#" class="social-btn instagram"><span class="visually-hidden">инстаграм</span></a></li>
+    		  <li><a href="#" class="social-btn facebook"><span class="visually-hidden">Фейсбук</span></a></li>
+    		  <li><a href="#" class="social-btn vk"><span class="visually-hidden">Вконтакте</span></a></li>
     		</ul>
     	</div>
     	<nav class="info">
@@ -230,6 +246,6 @@
     </section>
          
 
-
+    </div>
   </body>
 </html>
