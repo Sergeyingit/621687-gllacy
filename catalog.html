@@ -109,12 +109,14 @@
           <form action="https://echo.htmlacademy.ru" method="get">
             <div class="filter-item-select">
             <label class="label-filter" for="sorting">Сортировка:</label>
+              <div class="select-wrapper">
             <select class="select-hover" name="sorting" id="sorting">
                 <option class="value-filter" value="sorting-popular">по популярности</option>
                 <option class="value-filter" value="sorting-inexpensive">сначала недорогие</option>
                 <option class="value-filter" value="sorting-expensive">сначала дорогие</option>
                 <option class="value-filter" value="sorting-fat">по жирности</option>
             </select>
+              </div>
             </div>
             <div class="filter-item-range">
             <section class="range">
@@ -295,7 +297,7 @@
             <li><a class="pagination-item" href="#">3</a></li>
             <li><a class="pagination-item" href="#">4</a></li>
             <li><a class="pagination-item" href="#">5</a></li>
-            <li><a class="pagination-item" href="#"><span class="visually-hidden">Вперед</span></a></li>
+            <li><a class="pagination-item pagination-item-next" href="#"><span class="visually-hidden">Вперед</span></a></li>
         </ul>
     </main>
     
@@ -311,8 +313,8 @@
         <nav class="info">
             <ul>
                 <li><a href="#"><span class="for-shipper">Для поставщиков</span></a></li>
-                <li><a href="#">О производстве</a></li>
                 <li><a href="#">Наши документы</a></li>
+                <li><a href="#">О производстве</a></li>
                 <li><a href="#">Экологические стандарты</a></li>
             </ul>
         </nav>
