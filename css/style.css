@@ -1577,11 +1577,11 @@ color: #999999
 
 
 
-.pagination-item:hover,
-.pagination-item:focus{
+.pagination-item:hover:not(.pagination-item-back),
+.pagination-item:focus:not(.pagination-item-back){
 	background-color: #9db1a5;
 }
-.pagination-item:active {
+.pagination-item:active:not(.pagination-item-back) {
 	color:  #323232;
 	background-color: #ffffff;
 }
@@ -1666,13 +1666,6 @@ color: #999999
 }
 .btn-header .icon-search:hover::before,
 .btn-header .icon-search:focus::before {
-	content: "";
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%,-50%);
-	width: 17px;
-	height: 17px;
 	background-image: url("../img/loupe-black.svg");
 	background-position: 0 0;
 	background-repeat: no-repeat;
@@ -1697,12 +1690,6 @@ color: #999999
 }
 .btn-header .icon-login:hover::before,
 .btn-header .icon-login:focus::before {
-	content: "";
-	position: absolute;
-	top: 6px;
-	left: 16px;
-	width: 21px;
-	height: 19px;
 	background-image: url("../img/entrance.svg");
 	background-position: 0 0;
 	background-repeat: no-repeat;
@@ -1722,6 +1709,14 @@ padding-left: 44px;
 	width: 21px;
 	height: 20px;
 	background-image: url("../img/basket.svg");
+    background-position: 0 0;
+	background-repeat: no-repeat;
+}
+
+.btn-header .icon-basket:hover:before,
+.btn-header .icon-basket:focus:before {
+	
+	background-image: url("../img/basket-black.svg");
 
 }
 .btn-header .icon-basket-1 {
@@ -1872,7 +1867,8 @@ padding-left: 44px;
 	position: absolute;
 	left: 0;
 	top: 0;
-
+    width: 100%;
+    height: 430px;
 }
 
 
@@ -1887,8 +1883,8 @@ padding-left: 44px;
 .pin::before {
 	content: "";
 	position: absolute;
-	top: 173px;
-	left: 229px;
+	top: 138px;
+	left: 230px;
 	background-image: url("../img/pin.png");
 	width: 218px;
 	height: 142px;
