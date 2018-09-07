@@ -44,13 +44,19 @@
                         <section class="modal modal-login">
                             <h2 class="visually-hidden">Личный кабинет</h2>
                             <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
-                                <label class="visually-hidden" for="login">Электронная почта</label>
-                                <input class="form-input" type="text" id="login" name="login" placeholder="Электронная почта">
-                                <label class="visually-hidden" for="password">Пароль</label>
-                                <input class="form-input" type="password" name="password" id="password" placeholder="Пароль">
+                                <p class="login-item"><label class="visually-hidden" for="login">Электронная почта</label>
+                                <input class="form-input" type="text" id="login" name="login" placeholder="Электронная почта"></p>
+                                <p class="login-item"><label class="visually-hidden" for="password">Пароль</label>
+                                <input class="form-input" type="password" name="password" id="password" placeholder="Пароль"></p>
+                                <div class="flex-login">
                                 <button class="button" type="submit">Войти</button>
-                                <p><a class="link-modal" href="#">Забыли пароль?</a></p>
-                                <p><a class="link-modal" href="#">Новая регистрация</a></p>
+                                <div class="login-help">  
+                                <a class="link-modal" href="#">Забыли пароль?</a>
+                                <a class="link-modal" href="#">Новая регистрация</a>
+                                </div>
+                                </div>
+                                
+                                
                             </form>
                         </section>
                     </li>
@@ -60,7 +66,7 @@
                             <form action="https://echo.htmlacademy.ru" method="post">
                                 <table class="basket">
                                     <tr>
-                                        <td class="btn-basket"><button type="button" class="delete-btn visually-hidden">Удалить товар</button></td>
+                                        <td class="btn-basket"><button type="button" class="delete-btn"><span class="visually-hidden">Удалить товар</span></button></td>
                                         <td class="image-in-basket"><img src="img/catalog-1.png" width="33" height="33" alt="Пломбир с апельсиновым джемом"></td>
                                         <td class="product-in-basket"><a class="link-basket" href="#">Пломбир с апельсиновым джемом</a></td>
                                         <td class="weight-in-basket">1,5 кг х <span>200 руб.</span></td>
@@ -68,7 +74,7 @@
                                     
                                     </tr>
                                     <tr>
-                                        <td class="btn-basket"><button type="button" class="delete-btn visually-hidden">Удалить товар</button></td>
+                                        <td class="btn-basket"><button type="button" class="delete-btn"><span class="visually-hidden">Удалить товар</span></button></td>
                                         <td class="image-in-basket"><img src="img/catalog-3.png" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада"></td>
                                         <td class="product-in-basket"><a class="link-basket" href="#">Клубничный пломбир с присыпкой из белого шоколада</a></td>
                                         <td class="weight-in-basket">1,5 кг х <span>300 руб.</span></td>
@@ -76,8 +82,7 @@
                                     
                                     </tr>
                                     <tr class="summation">
-                                        <td colspan="4">Итого:</td>
-                                        <td>750 руб.</td>
+                                        <td colspan="5">Итого: 750 руб.</td>
                                     </tr>
                                 </table>
                                 <button class="button" type="submit">Оформить заказ</button>
@@ -257,7 +262,7 @@
                 <li class="catalog-item">
                     <img src="img/catalog-9.png" width="267" height="267" alt="Сливочно-ванильное с кусочками шоколада">
                     <span class="price">440₽<span>/кг</span></span>
-                    <a href="#">Сливочно-ванильное с кусочками шоколада</a>
+                    <a href="#">Сливочно-ванильное с кусочками&nbspшоколада</a>
                     <div class="card-product">
                         <a href="#" class="btn-catalog">Быстрый просмотр</a>
                     </div>

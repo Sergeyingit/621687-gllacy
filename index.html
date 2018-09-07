@@ -51,13 +51,17 @@
     	                    <h2 class="visually-hidden">Личный кабинет</h2>
     	                
     	                    <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
-    		                    <label class="visually-hidden" for="login">Электронная почта</label>
-    		                    <input class="form-input" type="text" id="login" name="login" placeholder="Электронная почта">
-    		                    <label class="visually-hidden" for="password">Пароль</label>
-    		                    <input class="form-input" type="password" name="password" id="password" placeholder="Пароль">
+    		                    <p class="login-item"><label class="visually-hidden" for="login">Электронная почта</label>
+    		                    <input class="form-input" type="text" id="login" name="login" placeholder="Электронная почта"></p>
+    		                    <p class="login-item"><label class="visually-hidden" for="password">Пароль</label>
+    		                    <input class="form-input" type="password" name="password" id="password" placeholder="Пароль"></p>
+    		                   <div class="flex-login">
     		                    <button class="button" type="submit">Войти</button>
-    		                    <p><a class="link-modal" href="#">Забыли пароль?</a></p>
-    		                    <p><a class="link-modal" href="#">Новая регистрация</a></p>
+    		                    <div class="login-help">
+    		                    <a class="link-modal" href="#">Забыли пароль?</a>
+    		                    <a class="link-modal" href="#">Новая регистрация</a>
+    		                    </div>
+    		                   </div>
     	                    </form>
                         </section>
     			    </li>
@@ -242,15 +246,15 @@
     	<h2 class="visually-hidden">Форма обратной связи</h2>
     	<form class="form-communication" action="https://echo.htmlacademy.ru" method="post">
     		<p>Мы обязательно вам ответим!</p>
-    		<label class="visually-hidden" for="name">Укажите ваше имя</label>
-    		<input class="form-input" type="text" name="name" id="name" placeholder="Как вас зовут?">
-    		<label class="visually-hidden" for="email">Укажите вашу почту для ответа</label>
-    		<input class="form-input" type="text" name="email" id="email" placeholder="Ваша почта для ответа?">
-    		<label class="visually-hidden" for="letter">Напишите сообщение</label>
-    		<textarea class="form-textarea" name="letter" id="letter" placeholder="Напишите что-нибудь..."></textarea>
+    		<p class="communication-item"><label class="visually-hidden" for="name">Укажите ваше имя</label>
+    		<input class="form-input" type="text" name="name" id="name" placeholder="Как вас зовут?"></p>
+    		<p class="communication-item"><label class="visually-hidden" for="email">Укажите вашу почту для ответа</label>
+    		<input class="form-input" type="text" name="email" id="email" placeholder="Ваша почта для ответа?"></p>
+    		<p class="communication-item"><label class="visually-hidden" for="letter">Напишите сообщение</label>
+    		<textarea class="form-textarea" name="letter" id="letter" placeholder="Напишите что-нибудь..."></textarea></p>
     		<button class="btn" type="submit">Отправить</button>
     	</form>
-    	<button class="visually-hidden close-btn" type="button">Закрыть</button>
+    	<button class="close-btn" type="button"><span class="visually-hidden">Закрыть</span></button>
     </section>
          
 
