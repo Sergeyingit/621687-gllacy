@@ -1,4 +1,4 @@
-html { 
+﻿html { 
 	-webkit-box-sizing: border-box; 
 	        box-sizing: border-box;
 	 }
@@ -1018,9 +1018,6 @@ img {
  }
 .social-btn {
 	color: #ffffff;
-}
-.info {
-	margin-top: 2px;
 }
 .info ul {
 	list-style: none;
@@ -2111,7 +2108,16 @@ padding-left: 44px;
 	width: 1200px;
 	margin: 0 auto;
 }
+.pin::before {
+	content: "";
+	position: absolute;
+	top: 138px;
+	left: 230px;
+	background-image: url("../img/pin.png");
+	width: 218px;
+	height: 142px;
 
+}
 .contacts {
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -2252,7 +2258,7 @@ padding-left: 44px;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	margin-top: 18px;
+	margin-top: 20px;
 }
 .social-btn {
 	width: 38px;
