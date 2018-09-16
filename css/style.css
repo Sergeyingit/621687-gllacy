@@ -522,6 +522,7 @@ img {
     margin: 0;
     padding: 0;
     list-style: none;
+    padding-top: 2px;
 }
 
 .slide {
@@ -756,7 +757,7 @@ img {
 
 .catalog-item img {
     border-radius: 50%;
-    margin-bottom: 13px;
+    margin-bottom: 12px;
 }
 
 .about-us {
@@ -1081,10 +1082,6 @@ img {
 
 .social-btn {
     color: #ffffff;
-}
-
-.info {
-    margin-top: 2px;
 }
 
 .info ul {
@@ -2167,7 +2164,7 @@ img {
     justify-content: space-between;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    margin-bottom: 36px;
+    margin-bottom: 38px;
 }
 
 .inner-page .catalog {
@@ -2223,6 +2220,8 @@ img {
     border-radius: 15px;
     height: 308px;
     padding: 25px 20px;
+    padding-top: 24px;
+    overflow: hidden;
 }
 
 .blog-sub {
@@ -2286,6 +2285,7 @@ img {
 	top: 0;
 	width: 100%;
 	height: 430px;
+	border: none;
 	z-index: 1;
 }
 
@@ -2444,7 +2444,7 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-top: 18px;
+    margin-top: 15px;
 }
 
 .social-btn {
