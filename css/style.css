@@ -761,7 +761,7 @@ img {
 }
 
 .catalog-item .inner-catalog-img {
-    margin-bottom: 14px;
+    margin-bottom: 13px;
 }
 
 .about-us {
@@ -1546,9 +1546,7 @@ img {
     font-size: 35px;
     line-height: 41px;
     font-weight: 700;
-    position: relative;
-    top: -20px;
-    margin-bottom: 5px;
+    margin-top: 4px;
 }
 
 .filter-item-select .label-filter {
@@ -1974,6 +1972,7 @@ img {
     flex-wrap: wrap;
     width: 500px;
     padding-left: 8px;
+    margin-top: 13px;
 }
 
 .btn-header {
@@ -2103,7 +2102,7 @@ img {
     -ms-flex-align: end;
     align-items: flex-end;
     width: 241px;
-    margin-top: -10px;
+    margin-top: -8px;
 }
 
 .logo {
@@ -2173,7 +2172,7 @@ img {
     margin-bottom: 38px;
 }
 .inner-page .catalog {
-    margin-bottom: 41px;
+    margin-bottom: 42px;
 }
 .catalog-item {
     width: 267px;
@@ -2334,7 +2333,7 @@ img {
 .main-footer-inner::before {
     content: "";
     position: absolute;
-    top: -18px;
+    top: -17px;
     left: 27px;
     width: 1146px;
     height: 1px;
@@ -2405,10 +2404,9 @@ img {
     margin-left: 77px;
 }
 
-.breadcrumbs {
-    margin-bottom: 17px;
+.filter {
+    margin-top: 27px;
 }
-
 .filter form {
     width: 861px;
     height: 132px;
@@ -2464,7 +2462,7 @@ img {
     margin-top: 18px;
 }
 .footer-social .inner-page-social {
-    margin-top: 19px;
+    margin-top: 20px;
 }
 
 .social-btn {
