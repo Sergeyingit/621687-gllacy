@@ -2557,6 +2557,7 @@ img {
     display: -ms-flexbox;
     display: flex;
     margin-top: 18px;
+    flex-wrap: wrap;
 }
 .footer-social .inner-page-social {
     margin-top: 20px;
