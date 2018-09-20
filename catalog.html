@@ -5,7 +5,7 @@
         <title>HTML Academy: Глейси</title>
         <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
         <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/style.min.css">
     </head>
 
     <body class="inner-page">
@@ -16,7 +16,7 @@
                 </a>
                 <nav class="main-nav">
                     <ul class="site-nav">
-                        <li class="modal-window"><a class="nav-item-active" tabindex="0">Каталог</a>
+                        <li class="modal-window" tabindex="0"><a class="nav-item-active">Каталог</a>
                             <ul class="modal modal-catalog">
                                 <li class="submenu"><a class="new" href="#">Новинки</a></li>
                                 <li class="submenu"><a class="active">Сливочное</a></li>
@@ -29,7 +29,7 @@
                         <li><a class="nav-item" href="#">О Компании</a></li>
                     </ul>
                     <ul class=btn-header>
-                        <li class="modal-window"><a class="header-link icon-search" href="#"><span class="visually-hidden">Поиск</span></a>
+                        <li class="modal-window" tabindex="0"><a class="header-link icon-search" href="#"><span class="visually-hidden">Поиск</span></a>
                             <section class="modal modal-search">
                                 <h2 class="visually-hidden">Поле поиска</h2>
                                 <form action="https://echo.htmlacademy.ru" method="get">
@@ -38,7 +38,7 @@
                                 </form>
                             </section>
                         </li>
-                        <li class="modal-window"><a class="header-link icon-login" href="#">Вход</a>
+                        <li class="modal-window" tabindex="0"><a class="header-link icon-login" href="#">Вход</a>
                             <section class="modal modal-login">
                                 <h2 class="visually-hidden">Личный кабинет</h2>
                                 <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
@@ -60,7 +60,7 @@
                                 </form>
                             </section>
                         </li>
-                        <li class="modal-window"><a class="header-link-1 icon-basket-1" href="#">2 товара</a>
+                        <li class="modal-window" tabindex="0"><a class="header-link-1 icon-basket-1" href="#">2 товара</a>
                             <section class="modal modal-basket">
                                 <h2 class="visually-hidden">Корзина</h2>
                                 <form action="https://echo.htmlacademy.ru" method="post">
@@ -116,10 +116,10 @@
                             <label class="label-filter" for="sorting">Сортировка:</label>
                             <div class="select-wrapper">
                                 <select class="select-hover" name="sorting" id="sorting">
-                                    <option class="value-filter" value="sorting-popular">по популярности</option>
-                                    <option class="value-filter" value="sorting-inexpensive">сначала недорогие</option>
-                                    <option class="value-filter" value="sorting-expensive">сначала дорогие</option>
-                                    <option class="value-filter" value="sorting-fat">по жирности</option>
+                                    <option class="value-filter option-color" value="sorting-popular">по популярности</option>
+                                    <option class="value-filter option-color" value="sorting-inexpensive">сначала недорогие</option>
+                                    <option class="value-filter option-color" value="sorting-expensive">сначала дорогие</option>
+                                    <option class="value-filter option-color" value="sorting-fat">по жирности</option>
                                 </select>
                             </div>
                         </div>
@@ -140,20 +140,20 @@
                             <legend class="label-filter">Жирность:</legend>
                             <ul>
                                 <li class="filter-option">
-                                    <input class="visually-hidden filter-radio" type="radio" name="fat" id="fat-0" value="fat-0">
-                                    <label class="value-filter" for="fat-0" tabindex="0">0%</label>
+                                    <input class="visually-hidden filter-input filter-radio" type="radio" name="fat" id="fat-0" value="fat-0">
+                                    <label class="value-filter" for="fat-0">0%</label>
                                 </li>
                                 <li class="filter-option">
-                                    <input class="visually-hidden filter-radio" type="radio" name="fat" id="fat-10" value="fat-10" checked>
-                                    <label class="value-filter" for="fat-10" tabindex="0">до 10%</label>
+                                    <input class="visually-hidden filter-input filter-radio" type="radio" name="fat" id="fat-10" value="fat-10" checked>
+                                    <label class="value-filter" for="fat-10">до 10%</label>
                                 </li>
                                 <li class="filter-option">
-                                    <input class="visually-hidden filter-radio" type="radio" name="fat" id="fat-30" value="fat-30">
-                                    <label class="value-filter" for="fat-30" tabindex="0">до 30%</label>
+                                    <input class="visually-hidden filter-input filter-radio" type="radio" name="fat" id="fat-30" value="fat-30">
+                                    <label class="value-filter" for="fat-30">до 30%</label>
                                 </li>
                                 <li class="filter-option">
-                                    <input class="visually-hidden filter-radio" type="radio" name="fat" id="fat-over-30" value="fat-over-30">
-                                    <label class="value-filter" for="fat-over-30" tabindex="0">выше 30%</label>
+                                    <input class="visually-hidden filter-input filter-radio" type="radio" name="fat" id="fat-over-30" value="fat-over-30">
+                                    <label class="value-filter" for="fat-over-30">выше 30%</label>
                                 </li>
                             </ul>
                         </fieldset>
@@ -161,24 +161,24 @@
                             <legend class="label-filter">Наполнители:</legend>
                             <ul>
                                 <li class="filter-option">
-                                    <input class="visually-hidden filter-checkbox" type="checkbox" name="chocolate" id="chocolate" checked>
-                                    <label class="value-filter" for="chocolate" tabindex="0">шоколадные</label>
+                                    <input class="visually-hidden filter-input filter-checkbox" type="checkbox" name="chocolate" id="chocolate" checked>
+                                    <label class="value-filter" for="chocolate">шоколадные</label>
                                 </li>
                                 <li class="filter-option">
-                                    <input class="visually-hidden filter-checkbox" type="checkbox" name="sugar" id="sugar" checked>
-                                    <label class="value-filter" for="sugar" tabindex="0">сахарные присыпки</label>
+                                    <input class="visually-hidden filter-input filter-checkbox" type="checkbox" name="sugar" id="sugar" checked>
+                                    <label class="value-filter" for="sugar">сахарные присыпки</label>
                                 </li>
                                 <li class="filter-option">
-                                    <input class="visually-hidden filter-checkbox" type="checkbox" name="fruit" id="fruit">
-                                    <label class="value-filter" for="fruit" tabindex="0">фрукты</label>
+                                    <input class="visually-hidden filter-input filter-checkbox" type="checkbox" name="fruit" id="fruit">
+                                    <label class="value-filter" for="fruit">фрукты</label>
                                 </li>
                                 <li class="filter-option">
-                                    <input class="visually-hidden filter-checkbox" type="checkbox" name="syrup" id="syrup">
-                                    <label class="value-filter" for="syrup" tabindex="0">сиропы</label>
+                                    <input class="visually-hidden filter-input filter-checkbox" type="checkbox" name="syrup" id="syrup">
+                                    <label class="value-filter" for="syrup">сиропы</label>
                                 </li>
                                 <li class="filter-option">
-                                    <input class="visually-hidden filter-checkbox" type="checkbox" name="jam" id="jam">
-                                    <label class="value-filter" for="jam" tabindex="0">джемы</label>
+                                    <input class="visually-hidden filter-input filter-checkbox" type="checkbox" name="jam" id="jam">
+                                    <label class="value-filter" for="jam">джемы</label>
                                 </li>
                             </ul>
                         </fieldset>
